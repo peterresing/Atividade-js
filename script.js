@@ -93,8 +93,11 @@ document.getElementById("btn8").addEventListener("click", function(){
 //
 // Dica: use .lastElementChild e .removeChild()
 document.getElementById("btn9").addEventListener("click", function(){
-    let removido = document.lastElementChild("list9")
-    document.removeChild(removido)
+    var lista = document.getElementById("lista9")
+    var ultimo = lista.lastElementChild;
+    if (ultimo) {
+        lista.removeChild(ultimo)
+    }
 })
 
 
