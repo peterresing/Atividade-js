@@ -60,7 +60,12 @@ document.getElementById("btn5").addEventListener("click", function(){
 //
 // Dica: leia o valor atual com .textContent, converta para
 // numero com Number() e some 1
+document.getElementById("btn6").addEventListener("click", function(){
+    let contador = document.getElementById("contador6")
+    let contaAtual = Number(contador.textContent)
+    contador.textContent = contaAtual +1
 
+})
 
 
 // ---------- Exercicio 7 ----------
@@ -68,7 +73,10 @@ document.getElementById("btn5").addEventListener("click", function(){
 // e mostre dentro do #resultado7
 //
 // Dica: use .value para pegar o texto do input
-
+document.getElementById("btn7").addEventListener("click", function(){
+    let escrito = document.getElementById("input7").value
+    document.getElementById("resultado7").textContent = escrito
+})
 
 
 // ---------- Exercicio 8 ----------
