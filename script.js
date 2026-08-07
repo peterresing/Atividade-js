@@ -92,7 +92,10 @@ document.getElementById("btn8").addEventListener("click", function(){
 // Ao clicar no botao, remova o ultimo <li> da #lista9
 //
 // Dica: use .lastElementChild e .removeChild()
-
+document.getElementById("btn9").addEventListener("click", function(){
+    let removido = document.lastElementChild("list9")
+    document.removeChild(removido)
+})
 
 
 // ---------- Exercicio 10 ----------
@@ -100,4 +103,6 @@ document.getElementById("btn8").addEventListener("click", function(){
 // "https://placecats.com/300/200"
 //
 // Dica: use .src = "nova-url"
-
+document.getElementById("btn10").addEventListener("click", function(){
+    document.getElementById("imagem10").src = ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbTyH80dshli006zAfcz2YCrwfXWo5kECwXA&s")
+})
