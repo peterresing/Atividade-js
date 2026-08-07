@@ -38,7 +38,11 @@ document.getElementById("btn3").addEventListener("click", function(){
 // "Novo item" dentro da lista #lista4
 //
 // Dica: use document.createElement() e .appendChild()
-
+document.getElementById("btn4").addEventListener("click", function(){
+    const itemNovo = document.createElement("li")
+    itemNovo.textContent = "Novo item"
+    document.getElementById("lista4").appendChild(itemNovo)
+})
 
 
 // ---------- Exercicio 5 ----------
@@ -71,7 +75,9 @@ document.getElementById("btn5").addEventListener("click", function(){
 // Ao clicar no botao, adicione a classe "destaque" ao #texto8
 //
 // Dica: use .classList.add("destaque")
-
+document.getElementById("btn8").addEventListener("click", function(){
+    document.getElementById("texto8").classList.add("destaque")
+})
 
 
 // ---------- Exercicio 9 ----------
